@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Series:</strong>
+  <%= @comic.series%>
+</p>
+
+<p>
+  <strong>Uri:</strong>
+  <%= @comic.uri %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @comic.year %>
+</p>
+
+<%= link_to 'Edit', edit_comic_path(@comic) %> |
+<%= link_to 'Back', comics_path %>
