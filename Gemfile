@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.3'
 
 gem 'rails', github: 'rails/rails'
 gem 'sprockets-rails', github: 'rails/sprockets-rails'
@@ -7,7 +8,6 @@ gem 'sass-rails', github: 'rails/sass-rails'
 gem 'arel', github: 'rails/arel'
 gem 'rack', github: 'rack/rack'
 
-gem 'sqlite3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', github: 'rails/coffee-rails'
 gem 'jquery-rails'
@@ -16,6 +16,7 @@ gem 'turbolinks', github: 'rails/turbolinks'
 
 group :production do
   gem 'puma'
+  gem 'pg'
 end
 
 group :development, :test do
@@ -25,6 +26,7 @@ group :development, :test do
   %w[rspec rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
     gem lib, :git => "git://github.com/rspec/#{lib}.git", :branch => 'master'
   end
+  gem 'sqlite3'
 end
 
 group :development do
