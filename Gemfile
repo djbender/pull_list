@@ -14,6 +14,10 @@ gem 'jquery-rails'
 gem 'turbolinks', github: 'rails/turbolinks'
 # gem 'bcrypt', '~> 3.1.7'
 
+group :production do
+  gem 'puma'
+end
+
 group :development, :test do
   gem 'rack-livereload'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
