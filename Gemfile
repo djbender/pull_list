@@ -17,6 +17,7 @@ gem 'turbolinks', github: 'rails/turbolinks'
 group :production do
   gem 'puma'
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
